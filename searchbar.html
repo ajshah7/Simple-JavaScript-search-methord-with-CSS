@@ -1,0 +1,131 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>This is a simple search bar</title>
+        <style>
+
+  
+
+            /* Color of header h1*/
+            h1 {
+                color: white;
+            }
+
+            /* color of header h3 */
+            h3 {
+                color: white;
+            }
+
+            /* Coloring the body background */
+            body {
+                background: black;
+            }
+            
+             /* Coloring the paragraph */
+            p{
+                color: white;
+            }
+            
+            
+/*** TEXT BOX ***/
+.search_field{
+    background: #fafafa; /* Fallback color for non-css3 browsers */
+
+    /* Gradients */
+    background: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(250,250,250)), color-stop(1, rgb(230,230,230)));
+    background: -moz-linear-gradient( center top, rgb(250,250,250) 0%, rgb(230,230,230) 100%);
+    border: 0;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid rgba(255,255,255,.8);
+    font-size: 16px;
+    margin: 4px;
+    padding: 5px;
+    width: 250px;
+
+    /* Rounded Corners */
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+
+    /* Shadows */
+    box-shadow: -1px -1px 2px rgba(0,0,0,.3), 0 0 1px rgba(0,0,0,.2);
+    -webkit-box-shadow: -1px -1px 2px rgba(0,0,0,.3), 0 0 1px rgba(0,0,0,.2);
+    -moz-box-shadow: -1px -1px 2px rgba(0,0,0,.3), 0 0 1px rgba(0,0,0,.2);
+}
+/*** SEARCH BUTTON ***/
+.submit_btn{
+    background: black;/* Fallback  color for non-css3 browsers */
+    /* Gradients */
+    background: black; /* search button bg color*/
+    color: white; /* search button text color*/
+    cursor: pointer;
+    font: 16px 'Raleway', sans-serif;
+    font-weight: bold;
+    height: 30px;
+    /* Rounded Corners */
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+
+}
+/*** SEARCH BUTTON HOVER ***/
+.submit_btn:hover {
+    background: green; /* Fallback color for non-css3 browsers */
+}
+
+        </style>
+    </head>
+    <body>
+        <h1>A simple search bar using JS if-else Statements</h1>
+        <p>search for A , B , C or D . if this is not entered, it will show error</p>
+        <!--Create a form to take input and a button for searching-->
+      <form id="form">
+        <input type="text" id="mySearch" placeholder="Ex. CSE 3rd, use this format" class="search_field"/>
+        <button onclick="search()" class="submit_btn">Search</button>
+    
+    </form>
+
+        <!--JavaScript starts from here -->
+        <script type="text/javascript">
+            
+            // JavaScript function search() is defined below
+            function search() {
+                
+                
+                var input = document.getElementById("mySearch"); //taking the input from the input form
+                var name = input.value.toUpperCase(); // passing the value of input to a new variable
+
+                //if-else statements starts from here, give as many as statements according to your needs.
+                if(name == "A"){
+                    alert("You searched for"+name)
+                    
+                   // window.open("www.google.com"); , window.open can be used to redirect to another page.
+                }
+
+                else if(name == "B"){
+                     alert("You searched for"+name)
+                } 
+                else if(name == "C"){
+                     alert("You searched for"+name)
+                }
+                else if(name == "D"){
+                     alert("You searched for"+name)
+                }
+                
+
+                else {
+
+                    alert("Wrong input");
+                }
+
+            }
+
+
+        </script>
+
+        <h3>BY AJMAL SHAH</h3>
+
+    </body>
+
+
+</html>
